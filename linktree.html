@@ -4,10 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@MNCSekuritas | Linktree</title>
+    <title>MNCSekuritas | Linktree</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function showme() {
+            //alert("hallo selamat siang");
+            Swal.fire({
+                title: "Halo!",
+                text: "Selamat Siang",
+                icon: "success"
+            });
+        }
+
+        function changeText() {
+            const element = document.getElementById("intro");
+            element.innerHTML = "Sistem Informasi ITS";
+        }
+
+        function changeStyle() {
+            const element = document.getElementById("tombol");
+            element.style.color = "red";
+            element.style.background = "yellow";
+        }
+
+    </script>
 
     <style>
         :root {
@@ -271,12 +294,28 @@
             color: #666;
             font-size: 12px;
         }
+
+        @media (max-width: 576px) {
+            .main-wrapper {
+                padding: 0;
+                align-items: stretch;
+            }
+
+            .profile-canvas {
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 2rem 1.25rem 3rem 1.25rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-
     <div class="main-wrapper">
+        <button class="btn btn-primary" onclick="showme();"> Show Me </button>
+        <button class="btn btn-primary" onclick="changeText();"> Change Text </button>
+        <button class="btn btn-primary" onclick="changeStyle();"> Change Style </button>
         <div class="profile-canvas">
 
             <div class="top-nav">
@@ -290,11 +329,10 @@
             <div class="text-center">
                 <img class="rounded-full object-contain"
                     src="https://ugc.production.linktr.ee/FOz0qt2JSJGsemSWJSbT_a92dbba9b138af42b1c46ee553fd2a2b.png?io=true&amp;size=avatar-v3_0"
-                    alt="" style="width:120px;height:120px" role="presentation" data-testid="ProfileImage"
+                    alt="" style="width:108px;height:108px" role="presentation" data-testid="ProfileImage"
                     crossorigin="anonymous">
 
                 <h1 class="profile-title">@MNCSekuritas</h1>
-
                 <div class="social-icons">
                     <a href="#"><i class="bi bi-whatsapp"></i></a>
                     <a href="#"><i class="bi bi-instagram"></i></a>
@@ -314,109 +352,109 @@
                         alt="MotionTrade Lite">
                     <div class="featured-footer">
                         <span>Reksa Dana di MotionTrade Lite!</span>
-                        <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/motion-trade-billionaires-game-br-the-ultimate-virtual-trading-war/"
+                    class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/b5492747-1d5a-4d78-8ad3-09bb156ade44_DAILY-MSEK-STORY---2026-03-13T095913.169.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">mncsekuritas.id</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/promo-reksa-dana-br-angpao-imlek-spesial-br-pt-danakita-investama/"
+                    class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/1676b489-cf82-443e-8106-621a907afe6d_IMG-5085.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">PROMO REKSA DANA DANAKITA INVESTAMA</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/promo-reksa-dana-br-pacu-hoki-di-tahun-kuda-api-br-pt-ciptadana-asset-management/"
+                    class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/e4439318-5969-4829-905e-16a5e761a18b_Tahun-Kuda-Ciptadana-feed.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">PROMO REKSA DANA CAPITAL ASSET MANAGEMENT</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/motiontrade-trading-competition/" class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/f78511b6-3ba2-4984-8e75-e3301697c954_Email-blast.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">MotionTrade Trading Competition 2026</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/promo-reksa-dana-new-year-new-asset-pt-avrist-asset-management/"
+                    class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/de9aa9ef-4793-47a1-aca5-5c466d8e9a9c_DAILY-MSEK-STORY---2026-01-15T105710.237.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">PROMO REKSA DANA NEW YEAR NEW ASSET AVRIST</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://tr.ee/6Jyvw59xQi" class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/20dac30f-6e8b-49ea-9fb1-6e433b85b073_maxresdefault.webp"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">Ubah Tampilan PRO ke LITE</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/promo/motiontrade-lite/" class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/5fee7f12-95e4-4ebe-a30f-ee675614eb29_image.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">PROMO Rp0 MotionTrade Lite</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://www.youtube.com/watch?v=48RR7deS8rQ&feature=youtu.be" class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/yLFEKQqFRyV2rgq3p5bD_MotionTrade-icon_apps.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">Pembukaan Akun Full Online</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://www.youtube.com/watch?si=JfvDmcD2Ri8nvOI0&v=pEWES12A4dI&feature=youtu.be"
+                    class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/hohc2EB1SsSGyWT2N621_MotionTrade-icon_apps.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">Pembukaan Akun Syariah</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://motiontrade.id/promo/Margin/" class="btn-linktree">
                     <i class="bi bi-cash-stack left-icon"></i>
                     <div class="btn-text">Aktivasi Akun Margin Online</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://mncsekuritas.id/jadwal/" class="btn-linktree">
                     <i class="bi bi-sliders left-icon"></i>
                     <div class="btn-text">Daftar Kelas Edukasi</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://motiontrade.id/" class="btn-linktree">
                     <img src="https://ugc.production.linktr.ee/TDr3FzfWRUy6g7bHQgTg_MotionTrade-icon_apps.png"
                         class="thumb-img" alt="Thumbnail">
                     <div class="btn-text">Download MotionTrade</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
+                <a href="https://www.mncsekuritas.id/" class="btn-linktree">
                     <div class="btn-text">Website</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
-                    <div class="left-icon"
-                        style="width: 28px; height: 28px; background-color: currentColor; -webkit-mask-image: url(https://assets.production.linktr.ee/tabler-icons/outline/brand-telegram.svg); -webkit-mask-size: 100%; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url(https://assets.production.linktr.ee/tabler-icons/outline/brand-telegram.svg); mask-size: 100%; mask-repeat: no-repeat; mask-position: center;">
-                    </div>
+                <a href="https://t.me/joinchat/AAAAAEIK3Lt0scymSQfOaw" class="btn-linktree">
+                    <i class="bi bi-telegram left-icon"></i>
                     <div class="btn-text">Telegram Channel</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
 
-                <a href="#" class="btn-linktree">
-                    <div class="left-icon"
-                        style="width: 28px; height: 28px; background-color: currentColor; -webkit-mask-image: url(https://assets.production.linktr.ee/tabler-icons/outline/brand-linkedin.svg); -webkit-mask-size: 100%; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url(https://assets.production.linktr.ee/tabler-icons/outline/brand-linkedin.svg); mask-size: 100%; mask-repeat: no-repeat; mask-position: center;">
-                    </div>
+                <a href="https://id.linkedin.com/company/mncsekuritas" class="btn-linktree">
+                    <i class="bi bi-linkedin left-icon"></i>
                     <div class="btn-text">LinkedIn</div>
                     <div class="share-icon"><i class="bi bi-three-dots-vertical"></i></div>
                 </a>
